@@ -1,20 +1,26 @@
 {
-  "name": "amazon-cloud-store",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Timo Behrmann",
-  "license": "MIT",
-  "dependencies": {
-    "hapi": "8.0.0rc2",
-    "hapi-swaggered": "^1.2.0",
-    "hapi-swaggered-ui": "^1.0.5",
-    "hoek": "^2.9.0",
-    "joi": "^4.9.0",
-    "lodash": "^2.4.1",
-    "needle": "^0.7.10"
-  }
+	"name": "amazon-cloud-store",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"bin": {
+		"acd-sync": "./bin/acd-sync",
+		"acd-oauth": "./bin/acd-oauth"
+	},
+	"author": "Timo Behrmann",
+	"license": "MIT",
+	"dependencies": {
+		"async": "^0.9.0",
+		"hapi": "8.0.0rc2",
+		"hoek": "^2.9.0",
+		"joi": "^4.9.0",
+		"lodash": "^2.4.1",
+		"pem": "^1.4.1",
+		"pretty-hrtime": "^0.2.2",
+		"request": "^2.48.0",
+		"walk": "^2.3.4",
+		"yargs": "^1.3.3"
+	}
 }
